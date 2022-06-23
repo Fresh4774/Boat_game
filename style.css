@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #061008;
+  font-family: sans-serif;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#restart-button {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 32px;
+  width: 200px;
+  height: 100px;
+  bottom: 15%;
+  left: calc(50% - 100px);
+  z-index: 999999;
+  border-radius: 5px;
+}
+@media only screen and (max-height: 500px) {
+  #restart-button {
+    bottom: 0%;
+    height: 80px;
+  }
+}
